@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel = "preconnect" href = "https://fonts.googleapis.com">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+        <link href = "https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel = "stylesheet">
+
+		<title id = "title">Welcome</title>
+
+        <style type = "text/css">
+            body
+            {
+                font: "Ubuntu", monospace;
+                font-size: xx-large;
+                color: white;
+                background-color: black;
+            }
+            div
+            {
+                text-align: center;
+            }
+        </style>
+        <script type = "text/javascript">
+            /* Global variables */
+            var g_title, g_time, g_date;
+
+            function init()
+            {
+                /* Set global variables once */
+                g_title = document.getElementById( "title" );
+                g_time = document.getElementById( "time" );
+                g_date = document.getElementById( "date" );
+
+                /* Call func every 1 sec */
+                setInterval( func, 1000 );
+            }
+
+            function func()
+            {
+                let date_time = new Date();
+                let time = date_time.toLocaleTimeString();
+
+                /* Set time */
+                g_title.innerHTML = time;
+                g_time.innerHTML = time;
+
+                /* Not a good idea to set date every 1 sec. */
+                g_date.innerHTML = date_time.toDateString();
+            }
+
+            window.addEventListener( "load", init, false );
+        </script>
+	</head>
+
+	<body>
+        <div>
+            <h1 id = "time"></h1>
+            <h3 id = "date"></h3>
+        </div>
+	</body>
+</html>
+
