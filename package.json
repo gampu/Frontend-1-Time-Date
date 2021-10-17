@@ -1,0 +1,27 @@
+{
+  "name": "frontend-1-time-date",
+  "version": "1.0.0",
+  "description": "An example application for practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gampu/Frontend-1-Time-Date.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gampu/Frontend-1-Time-Date/issues"
+  },
+  "homepage": "https://github.com/gampu/Frontend-1-Time-Date#readme",
+  "devDependencies": {
+    "surge": "^0.23.0"
+  }
+}
